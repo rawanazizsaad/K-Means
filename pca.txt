@@ -1,0 +1,24 @@
+PCA stands for Principal Component Analysis. It is a widely used dimensionality reduction technique in machine learning and data analysis. PCA is used to transform high-dimensional data into a lower-dimensional space while retaining the most important information or patterns present in the original data.
+
+The main objective of PCA is to find a new set of uncorrelated variables, called principal components, that capture the maximum variance in the data. The first principal component explains the largest amount of variation, the second principal component explains the second largest amount of variation, and so on. Each principal component is a linear combination of the original features.
+
+The steps involved in performing PCA are as follows:
+
+Standardize the data: PCA requires the data to be centered (zero mean) and scaled (unit variance) for accurate results. This step ensures that features with larger scales do not dominate the analysis.
+
+Compute the covariance matrix: The covariance matrix represents the relationships between the different features. It shows how the features co-vary with each other.
+
+Compute the eigenvectors and eigenvalues of the covariance matrix: The eigenvectors represent the principal components, and the eigenvalues represent the amount of variance explained by each principal component.
+
+Sort the eigenvectors in descending order based on their corresponding eigenvalues: This arranges the principal components in decreasing order of importance.
+
+Select the top k principal components: Choose the first k eigenvectors that correspond to the k largest eigenvalues to retain the most important information while reducing the dimensionality.
+
+Transform the data: Project the original data onto the selected k principal components to obtain the lower-dimensional representation of the data.
+
+PCA is widely used for various purposes, such as data visualization, noise reduction, feature extraction, and speeding up machine learning algorithms by reducing the number of input dimensions. By representing the data in a lower-dimensional space, PCA can make it easier to understand and interpret the underlying patterns and relationships present in the data.
+
+
+
+
+
